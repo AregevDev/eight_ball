@@ -1,3 +1,9 @@
+use rand::seq::SliceRandom;
+
+pub fn ask(_question: &'static str) -> Answer {
+    *POSSIBLE_ANSWERS.choose(&mut rand::thread_rng()).unwrap()
+}
+
 static POSSIBLE_ANSWERS: [Answer; 20] = [
     // affirmative answers
     Answer::new("It is certain.", AnswerType::Affirmative),
