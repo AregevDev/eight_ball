@@ -1,9 +1,11 @@
 use rand::seq::SliceRandom;
 
+/// Picks a random answer from the possible answers
 pub fn random_answer() -> Answer {
     *POSSIBLE_ANSWERS.choose(&mut rand::thread_rng()).unwrap()
 }
 
+/// Asks the magic ball a question returns a possible answer randomly
 pub fn ask(_question: &str) -> Answer {
     random_answer()
 }
@@ -20,14 +22,12 @@ static POSSIBLE_ANSWERS: [Answer; 20] = [
     Answer::new("Outlook good.", AnswerType::Affirmative),
     Answer::new("Yes.", AnswerType::Affirmative),
     Answer::new("Signs point to yes.", AnswerType::Affirmative),
-
     // non-committal answers
     Answer::new("Reply hazy, try again.", AnswerType::NonCommittal),
     Answer::new("Ask again later.", AnswerType::NonCommittal),
     Answer::new("Better not tell you now.", AnswerType::NonCommittal),
     Answer::new("Cannot predict now.", AnswerType::NonCommittal),
     Answer::new("Concentrate and ask again.", AnswerType::NonCommittal),
-
     // negative answers
     Answer::new("Don't count on it.", AnswerType::Negative),
     Answer::new("My reply is no.", AnswerType::Negative),
@@ -36,6 +36,9 @@ static POSSIBLE_ANSWERS: [Answer; 20] = [
     Answer::new("Very doubtful.", AnswerType::Negative),
 ];
 
+/// The type of an answer, used to determine it's color in the future.
+///
+/// Can be either affirmative, non-committal or negative.
 #[derive(Debug, Ord, PartialOrd, Eq, PartialEq, Copy, Clone, Hash)]
 pub enum AnswerType {
     Affirmative,
@@ -49,6 +52,9 @@ impl Default for AnswerType {
     }
 }
 
+/// Represents a possible answer the magic ball can return.
+///
+/// Holds the content str and it's type
 #[derive(Debug, Default, Ord, PartialOrd, Eq, PartialEq, Copy, Clone, Hash)]
 pub struct Answer {
     content: &'static str,
@@ -56,6 +62,7 @@ pub struct Answer {
 }
 
 impl Answer {
+    /// Returns a new Answer instance with a given content and type.
     pub const fn new(content: &'static str, answer_type: AnswerType) -> Self {
         Answer { content, answer_type }
     }
