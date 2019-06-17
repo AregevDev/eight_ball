@@ -1,7 +1,12 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+#[derive(Debug, Default, Ord, PartialOrd, Eq, PartialEq, Copy, Clone, Hash)]
+pub enum AnswerType {
+    Affirmative,
+    NonCommittal,
+    Negative,
+}
+
+#[derive(Debug, Default, Ord, PartialOrd, Eq, PartialEq, Copy, Clone, Hash)]
+pub struct Answer {
+    content: String,
+    question_type: AnswerType,
 }
