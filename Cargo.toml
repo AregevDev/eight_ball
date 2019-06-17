@@ -3,6 +3,10 @@ name = "eight_ball"
 version = "0.1.0"
 authors = ["AregevDev <aregevdev@gmail.com>"]
 edition = "2018"
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/AregevDev/eight_ball"
+description = "A crate mimicking the original magic 8 ball"
 
 [dependencies]
 rand = "0.7.0-pre.1"
