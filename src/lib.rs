@@ -26,21 +26,27 @@ static POSSIBLE_ANSWERS: [Answer; 20] = [
     Answer::new("Very doubtful.", AnswerType::Negative),
 ];
 
-#[derive(Debug, Default, Ord, PartialOrd, Eq, PartialEq, Copy, Clone, Hash)]
+#[derive(Debug, Ord, PartialOrd, Eq, PartialEq, Copy, Clone, Hash)]
 pub enum AnswerType {
     Affirmative,
     NonCommittal,
     Negative,
 }
 
+impl Default for AnswerType {
+    fn default() -> Self {
+        AnswerType::Affirmative
+    }
+}
+
 #[derive(Debug, Default, Ord, PartialOrd, Eq, PartialEq, Copy, Clone, Hash)]
 pub struct Answer {
     content: &'static str,
-    question_type: AnswerType,
+    answer_type: AnswerType,
 }
 
 impl Answer {
     pub const fn new(content: &'static str, answer_type: AnswerType) -> Self {
-        Answer { content, question_type }
+        Answer { content, answer_type }
     }
 }
