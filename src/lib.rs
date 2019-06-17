@@ -64,6 +64,19 @@ pub struct Answer {
 impl Answer {
     /// Returns a new Answer instance with a given content and type.
     pub const fn new(content: &'static str, answer_type: AnswerType) -> Self {
-        Answer { content, answer_type }
+        Answer {
+            content,
+            answer_type,
+        }
+    }
+
+    /// Returns an Answer's content
+    pub fn content(&self) -> &'static str {
+        &self.content
+    }
+
+    /// Returns an Answer's type
+    pub fn answer_type(&self) -> &AnswerType {
+        &self.answer_type
     }
 }
