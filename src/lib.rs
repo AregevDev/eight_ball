@@ -1,7 +1,11 @@
 use rand::seq::SliceRandom;
 
-pub fn ask(_question: &'static str) -> Answer {
+pub fn random_answer() -> Answer {
     *POSSIBLE_ANSWERS.choose(&mut rand::thread_rng()).unwrap()
+}
+
+pub fn ask(_question: &str) -> Answer {
+    random_answer()
 }
 
 static POSSIBLE_ANSWERS: [Answer; 20] = [
