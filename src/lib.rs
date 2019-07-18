@@ -1,3 +1,8 @@
+//! Rust crate that mimics the original magic eight ball game.
+//! 
+//! Ask a question and it will reply...  
+//! Now supports custom answers 
+
 use rand::seq::SliceRandom;
 
 /// The crate's entry point, holdding the current possible answers
@@ -47,7 +52,7 @@ impl EightBall {
         if self.answers.is_empty() {
             return None;
         }
-        
+
         Some(*self.answers.choose(&mut rand::thread_rng()).unwrap())
     }
 }
