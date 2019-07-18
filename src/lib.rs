@@ -1,7 +1,7 @@
 //! Rust crate that mimics the original magic eight ball game.
-//! 
+//!
 //! Ask a question and it will reply...  
-//! Now supports custom answers 
+//! Now supports custom answers
 
 use rand::seq::SliceRandom;
 
