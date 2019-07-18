@@ -7,10 +7,21 @@ Ask a question and it will reply...
 
 ### Example
 ```rust
+use eight_ball::{Answer, AnswerType, EightBall};
+
 fn main() {
     let question = "Am I in charge?";
-    println!("Q: {}\nA: {}", question, eight_ball::ask(question).content());
+    let answers = vec![
+        Answer::new("UwU.", AnswerType::Affirmative),
+        Answer::new("OwO.", AnswerType::NonCommittal),
+        Answer::new("Baka No.", AnswerType::Negative),
+    ];
+    let b = EightBall::with_answers(answers);
+
+    println!("{}", question);
+    println!("{}", b.ask(question).unwrap().content);
 }
+
 ```
 
 ### Licence
