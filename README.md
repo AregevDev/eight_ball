@@ -2,8 +2,11 @@
 [![docs-badge][]][docs]
 
 # eight_ball
-A Rust crate mimicking the original 8 magic ball game.  
-Ask a question and it will reply...
+A Rust crate mimicking the original 8 magic ball game.
+
+Ask a question and it will reply...  
+Now supports custom answers.
+
 
 ### Example
 ```rust
