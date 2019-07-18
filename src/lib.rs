@@ -11,7 +11,7 @@ pub struct EightBall {
 }
 
 impl EightBall {
-    /// constructs a new EightBall, the possibe answers are matching the original answers  
+    /// Constructs a new EightBall, the possibe answers are matching the original answers  
     pub fn new() -> Self {
         EightBall {
             answers: vec![
