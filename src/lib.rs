@@ -1,12 +1,13 @@
-//! Rust crate that mimics the original magic eight ball game.
+//! Mimics the original magic eight ball game.
 //!
-//! Ask a question and it will reply...  
-//! Now supports custom answers
+//! Ask a question and it will reply with an answer...  
+//! Also supports predefinded custom answers.
 
 use rand::seq::SliceRandom;
 
 /// The crate's entry point, holdding the current possible answers
 pub struct EightBall {
+    /// The possible answers the ball is holding
     pub answers: Vec<Answer>,
 }
 
@@ -78,7 +79,9 @@ impl Default for AnswerType {
 /// Holds the content str and it's type
 #[derive(Debug, Default, Ord, PartialOrd, Eq, PartialEq, Copy, Clone, Hash)]
 pub struct Answer {
+    /// The content string of the answer
     pub content: &'static str,
+    /// The answer type
     pub answer_type: AnswerType,
 }
 
