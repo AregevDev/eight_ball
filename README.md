@@ -4,7 +4,7 @@
 [![ci badge][]][ci link]
 
 # eight_ball
-Mimics the original 8 magic ball game.
+Mimics the original eight magic ball game.
 
 Ask a question and it will reply with an answer...  
 Also supports predefined custom answers.
