@@ -7,7 +7,7 @@
 Mimics the original 8 magic ball game.
 
 Ask a question and it will reply with an answer...  
-Also supports predefinded custom answers.
+Also supports predefined custom answers.
 
 
 ### Example

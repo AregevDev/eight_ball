@@ -1,18 +1,18 @@
 //! Mimics the original magic eight ball game.
 //!
 //! Ask a question and it will reply with an answer...  
-//! Also supports predefinded custom answers.
+//! Also supports predefined custom answers.
 
 use rand::seq::SliceRandom;
 
-/// The crate's entry point, holdding the current possible answers
+/// The crate's entry point, holding the current possible answers
 pub struct EightBall {
     /// The possible answers the ball is holding
     pub answers: Vec<Answer>,
 }
 
 impl EightBall {
-    /// Constructs a new EightBall, the possibe answers are matching the original answers  
+    /// Constructs a new EightBall, the possible answers are matching the original answers  
     pub fn new() -> Self {
         EightBall {
             answers: vec![
