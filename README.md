@@ -1,5 +1,6 @@
-[![cratesio version]][cratesio link]
-[![docs-badge][]][docs link]
+![me badge]
+[![cratesio badge]][cratesio link]
+[![docs badge][]][docs link]
 
 # eight_ball
 Mimics the original 8 magic ball game.
@@ -30,8 +31,10 @@ fn main() {
 ### Licence
 Apache-2.0
 
+[me badge]: https://img.shields.io/badge/fun%20fact-this%20is%20a%20project-271b66.svg?style=flat-square
+
 [cratesio link]: https://crates.io/crates/eight_ball
-[cratesio version]: https://img.shields.io/crates/v/eight_ball.svg?style=flat-square
+[cratesio badge]: https://img.shields.io/crates/v/eight_ball.svg?style=flat-square
 
 [docs link]: https://docs.rs/eight_ball
-[docs-badge]: https://img.shields.io/badge/docs-online-5023dd.svg?style=flat-square
+[docs badge]: https://img.shields.io/badge/docs-online-5023dd.svg?style=flat-square
