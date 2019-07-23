@@ -13,3 +13,10 @@ script:
   - cargo test --verbose --all
 
 cache: cargo
+
+deploy:
+    provider: cargo
+    token:
+        secure: kL5aVfkoB8iEldvGaaojKudfOeqULyR2p8LuJBGwUCM6RvcV/3Uvh9ILkqUtEunjHGARmss6ZzmyqhsRc4ezKoZVcZ8Suu61FrAl5dbcXf7OKC3jivLb53rJbdoOvtt5tSX9X2E5L86PJeC9owx9X28/EWQMd7BeRXL/xHWmQp5oZTNZD2HNQ3c6OM60N4DFLg9WJ8EHzEprZpoCT3Xk9mwwdRH6xNIMC8/V88OFszqGXJ9YF1pVHMRxi5N3XUkpBSdfp/M5B45hauSZVQ6LlIWJUHJK8kqdTXESMMsZtCQESU75rgWSW5Z0Zjl1n1+UQsOkudlcNH5Mss6x82vaJLU38bJD84hweE7K3d/GlWfb2oD2+qkTqcMy5YZfAuBiw760n3sVrlr35hdzpHICG9vXNVKTJX52SjMOTgiqvctiMWSsIIMupCELZZ4fXbJlgnzO77pbZWyt/GdzKddSOpSK9BP+LmjJDWrUt8Rcs5FFntlCRlkpOJ8bCNktGsF/5GQTNndkpE13ZTLIaqpkCA4QxNPNdfVf5268f76DTGClNPoiH1M1aXWeEUVj9zE3MKA34fSesA0c8/tJ+gKhU+z1OmTtOsH3t39LbAnJ2l++rX5ipQCHKylH68cQS3EuCKHkYpxqbBVTNZQliY4NfjU+B28FKEp6XmIi0CCLN4o=
+    on:
+        tags: true
