@@ -1,6 +1,7 @@
 ![me badge]
 [![cratesio badge]][cratesio link]
 [![docs badge][]][docs link]
+[![ci badge][]][ci link]
 
 # eight_ball
 Mimics the original 8 magic ball game.
@@ -38,3 +39,6 @@ Apache-2.0
 
 [docs link]: https://docs.rs/eight_ball
 [docs badge]: https://img.shields.io/badge/docs-online-5023dd.svg?style=flat-square
+
+[ci link]: https://travis-ci.com/AregevDev/eight_ball
+[ci badge]: https://img.shields.io/travis/com/AregevDev/eight_ball/master.svg?style=flat-square
