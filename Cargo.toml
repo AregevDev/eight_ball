@@ -6,7 +6,7 @@ edition = "2018"
 license = "Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/AregevDev/eight_ball"
-description = "A crate mimicking the original magic 8 ball"
+description = "Mimics the original magic 8 ball"
 documentation = "https://docs.rs/eight_ball"
 
 [dependencies]
