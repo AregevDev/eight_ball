@@ -1,11 +1,11 @@
-[![crates.io version]][crates.io link]
-[![docs-badge][]][docs]
+[![cratesio version]][cratesio link]
+[![docs-badge][]][docs link]
 
 # eight_ball
-Rust crate that mimics the original 8 magic ball game.
+Mimics the original 8 magic ball game.
 
-Ask a question and it will reply...  
-Now supports custom answers.
+Ask a question and it will reply with an answer...  
+Also supports predefinded custom answers.
 
 
 ### Example
@@ -30,7 +30,8 @@ fn main() {
 ### Licence
 Apache-2.0
 
-[crates.io link]: https://crates.io/crates/eight_ball
-[crates.io version]: https://img.shields.io/crates/v/eight_ball.svg?style=flat-square
-[docs]: https://docs.rs/eight_ball
+[cratesio link]: https://crates.io/crates/eight_ball
+[cratesio version]: https://img.shields.io/crates/v/eight_ball.svg?style=flat-square
+
+[docs link]: https://docs.rs/eight_ball
 [docs-badge]: https://img.shields.io/badge/docs-online-5023dd.svg?style=flat-square
